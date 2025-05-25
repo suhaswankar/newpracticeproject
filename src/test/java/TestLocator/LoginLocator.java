@@ -12,7 +12,7 @@ public class LoginLocator {
 	@FindBy (xpath = ("//input[@class ='btn btn-primary']")) public WebElement loginbtn;
 	@FindBy (xpath = ("//div[@class= alert alert-danger alert-dismissible]")) public WebElement alrtmsg;
 	
-	String warnmsg= "Warning: No match for E-Mail Address and/or Password.passss";
+	String warnmsg= "Warning: No match for E-Mail Address and/or Password";
 	
 	public LoginLocator(WebDriver driver) {
 		
@@ -37,10 +37,10 @@ public class LoginLocator {
 	public void login_warningmsg() {
 		
 		if (warnmsg.equals(alrtmsg)) {
-			System.out.println("login failed");
+			System.out.println("login successfully");
 		}
 		else {
-			System.out.println("Logon successfully");
+			System.out.println("Login failed");
 		}
 	}
 	

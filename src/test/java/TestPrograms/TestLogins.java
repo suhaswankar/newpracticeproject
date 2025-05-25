@@ -16,18 +16,21 @@ public class TestLogins extends OpenBrowser {
 	@Test
 	public void Testing() throws InterruptedException {
 		
+		test = report.createTest("AllDesktop test execution is started");
+		test.info("AllDesktop test execution is started");
+		
 		login =  new LoginLocator(driver);
 		
-		Thread.sleep(3000);
+		Thread.sleep(1000);
 		login.login_username();
 		
-		Thread.sleep(3000);
+		Thread.sleep(1000);
 		login.login_password();
 		
-		Thread.sleep(3000);
+		Thread.sleep(1000);
 		login.login_btn();
 		
-		Thread.sleep(3000);
+		Thread.sleep(1000);
 		login.login_warningmsg();
 		
 		
@@ -37,6 +40,7 @@ public class TestLogins extends OpenBrowser {
 	@AfterClass
 	public void CloseBrowser() {
 		driver.close();
+		report.flush();
 	}
 
 

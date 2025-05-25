@@ -1,6 +1,8 @@
 package Library;
 
 import java.io.IOException;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 import java.util.Random;
 import java.util.concurrent.TimeUnit;
 
@@ -10,8 +12,10 @@ import org.apache.log4j.xml.DOMConfigurator;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Parameters;
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
@@ -46,7 +50,7 @@ public class OpenBrowser {
 				driver.manage().window().maximize();
 				
 				System.out.println("browser is opened");
-				log.info("chrome is opened successfully");
+				log.info("Chrome is opened successfully");
 				
 		 }
 		 else if(br.equals("firefox"))  {
@@ -67,11 +71,14 @@ public class OpenBrowser {
 	@BeforeMethod
 	public void Reporting () {
 		
-		Random  RandomNumber = new Random();
-		int num = RandomNumber.nextInt();
+//		Random  RandomNumber = new Random();
+//		int num = RandomNumber.nextInt();
+		
+		DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd_HH-mm-ss");
+		String timestamp = LocalDateTime.now().format(formatter);
 		
 		
-		String path = System.getProperty("user.dir")+"MyProject\\Reports"+RandomNumber+".html";
+		String path = System.getProperty("user.dir")+"\\MyProject\\Reports"+timestamp+".html";
 		
 		spark = new ExtentSparkReporter(path);
 		
@@ -88,6 +95,8 @@ public class OpenBrowser {
 
 	}
 	
+	
+
 
 }
 

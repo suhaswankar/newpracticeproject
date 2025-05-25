@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-05-24T11:48:49 IST" name="Suite" finished-at="2025-05-24T11:49:16 IST" duration-ms="26652">
+  <suite started-at="2025-05-25T17:01:44 IST" name="Suite" finished-at="2025-05-25T17:02:01 IST" duration-ms="17380">
     <groups>
     </groups>
-    <test started-at="2025-05-24T11:48:49 IST" name="LoginTests" finished-at="2025-05-24T11:49:16 IST" duration-ms="26652">
+    <test started-at="2025-05-25T17:01:44 IST" name="LoginTests" finished-at="2025-05-25T17:02:01 IST" duration-ms="17380">
       <class name="TestPrograms.TestLogins">
-        <test-method is-config="true" signature="automatebrowser(java.lang.String)[pri:0, instance:TestPrograms.TestLogins@2da59753]" started-at="2025-05-24T11:48:49 IST" name="automatebrowser" finished-at="2025-05-24T11:49:00 IST" duration-ms="11307" status="PASS">
+        <test-method is-config="true" signature="automatebrowser(java.lang.String)[pri:0, instance:TestPrograms.TestLogins@2da59753]" started-at="2025-05-25T17:01:44 IST" name="automatebrowser" finished-at="2025-05-25T17:01:54 IST" duration-ms="10198" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,15 +18,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- automatebrowser -->
-        <test-method is-config="true" signature="Reporting()[pri:0, instance:TestPrograms.TestLogins@2da59753]" started-at="2025-05-24T11:49:00 IST" name="Reporting" finished-at="2025-05-24T11:49:01 IST" duration-ms="533" status="PASS">
+        <test-method is-config="true" signature="Reporting()[pri:0, instance:TestPrograms.TestLogins@2da59753]" started-at="2025-05-25T17:01:54 IST" name="Reporting" finished-at="2025-05-25T17:01:55 IST" duration-ms="655" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Reporting -->
-        <test-method signature="Testing()[pri:0, instance:TestPrograms.TestLogins@2da59753]" started-at="2025-05-24T11:49:01 IST" name="Testing" finished-at="2025-05-24T11:49:15 IST" duration-ms="14244" status="PASS">
+        <test-method signature="Testing()[pri:0, instance:TestPrograms.TestLogins@2da59753]" started-at="2025-05-25T17:01:55 IST" name="Testing" finished-at="2025-05-25T17:02:00 IST" duration-ms="5212" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Testing -->
-        <test-method is-config="true" signature="CloseBrowser()[pri:0, instance:TestPrograms.TestLogins@2da59753]" started-at="2025-05-24T11:49:15 IST" name="CloseBrowser" finished-at="2025-05-24T11:49:16 IST" duration-ms="395" status="PASS">
+        <test-method is-config="true" signature="CloseBrowser()[pri:0, instance:TestPrograms.TestLogins@2da59753]" started-at="2025-05-25T17:02:00 IST" name="CloseBrowser" finished-at="2025-05-25T17:02:01 IST" duration-ms="1128" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CloseBrowser -->
